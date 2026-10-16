@@ -45,7 +45,7 @@ async function send(subject,data,statusEl){
 }
 
 /* newsletter → Mailchimp (audience: Spicewood Living Weekly) */
-const MC_URL="https://spicewoodtxliving.us6.list-manage.com/subscribe/post-json?u=c85341195b7c7b6c0ab00bdd8&id=11bad09d16&f_id=00fac2e1f0";
+const MC_URL="https://spicewoodtxliving.us6.list-manage.com/subscribe/post-json?u=c85341195b7c7b6c0ab00bdd8&id=11bad09d16";
 const MC_BOT="b_c85341195b7c7b6c0ab00bdd8_11bad09d16";
 function mcSubscribe(fields){
   return new Promise((resolve,reject)=>{
