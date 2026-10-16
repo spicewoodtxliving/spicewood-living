@@ -77,14 +77,15 @@ function wireNewsletter(form,ids,onDone){
 const nl=$("#nlForm");
 if(nl)wireNewsletter(nl,{first:"n_first",last:"n_last",email:"n_email",status:"nlStatus"},()=>remember("nl_subscribed","1"));
 
-/* newsletter popup: once per visitor, a few seconds after the page opens */
+/* newsletter popup: a few seconds after the page opens; closing hides it for the rest of the visit */
 function recall(k){try{return localStorage.getItem(k)}catch{return null}}
 function remember(k,v){try{localStorage.setItem(k,v)}catch{}}
-const POP_DELAY=4000,POP_SNOOZE_DAYS=14;
+const POP_DELAY=6000;
+function recallVisit(k){try{return sessionStorage.getItem(k)}catch{return null}}
+function rememberVisit(k,v){try{sessionStorage.setItem(k,v)}catch{}}
 (function(){
   if(document.body.dataset.page==="newsletter"||recall("nl_subscribed"))return;
-  const snoozed=+recall("nl_popup_closed")||0;
-  if(Date.now()-snoozed<POP_SNOOZE_DAYS*864e5)return;
+  if(recallVisit("nl_popup_closed"))return; /* closed this visit: show again next visit */
   const wrap=document.createElement("div");wrap.className="nl-pop";wrap.hidden=true;
   wrap.innerHTML=`<div class="nl-pop-card" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="popTitle">
     <button type="button" class="nl-pop-x" aria-label="Close">&times;</button>
@@ -104,7 +105,7 @@ const POP_DELAY=4000,POP_SNOOZE_DAYS=14;
   </div>`;
   document.body.appendChild(wrap);
   let lastFocus=null;
-  function close(){wrap.hidden=true;document.removeEventListener("keydown",onKey);remember("nl_popup_closed",String(Date.now()));lastFocus&&lastFocus.focus&&lastFocus.focus()}
+  function close(){wrap.hidden=true;document.removeEventListener("keydown",onKey);rememberVisit("nl_popup_closed","1");lastFocus&&lastFocus.focus&&lastFocus.focus()}
   function onKey(e){if(e.key==="Escape")close()}
   wrap.addEventListener("click",e=>{if(e.target===wrap||e.target.closest(".nl-pop-x,.nl-pop-no"))close()});
   wireNewsletter(wrap.querySelector("#popForm"),{first:"p_first",last:"p_last",email:"p_email",status:"popStatus"},()=>{remember("nl_subscribed","1");setTimeout(close,2500)});
