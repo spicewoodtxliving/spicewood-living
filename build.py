@@ -28,6 +28,7 @@ NAV = [("index.html", "home", "Home"), ("this-week.html", "week", "This Week"),
        ("local-businesses.html", "directory", "Local Businesses"),
        ("home-services.html", "services", "Home Services"),
        ("moving-to-spicewood.html", "moving", "Moving Here"),
+       ("home-value.html", "value", "Home Value"),
        ("advertise.html", "advertise", "Advertise"), ("newsletter.html", "newsletter", "Newsletter")]
 
 PAGES = {
@@ -41,12 +42,14 @@ PAGES = {
           "Local pros for Spicewood, Texas homes: septic and wells, HVAC, plumbing, pest control, landscaping, docks and more, with Hill Country tips."),
  "moving": ("moving-to-spicewood.html", "moving-to-spicewood.html", "Moving to Spicewood, TX: Schools, Neighborhoods & What to Know | Spicewood Living",
           "Thinking about moving to Spicewood, Texas? School districts, neighborhoods, septic and water, and a first-month checklist."),
+ "value": ("home-value.html", "home-value.html", "What's My Spicewood, TX Home Worth? Free Home Value Estimate | Spicewood Living",
+          "Get a free home value estimate for your Spicewood, Texas home, plus what moves values here: acreage, Lake Travis access, water and septic, and taxes."),
  "advertise": ("advertise.html", "advertise.html", "Advertise Your Spicewood Business | Spicewood Living",
           "Get your Spicewood, Texas business listed for free, or reach locals and newcomers with a Featured spot."),
  "newsletter": ("newsletter.html", "newsletter.html", "This Week in Spicewood Newsletter | Spicewood Living",
           "Get This Week in Spicewood every Monday: new openings, live music, and local news. Short, local, and free."),
 }
-ORDER = ["home", "week", "directory", "services", "moving", "advertise", "newsletter"]
+ORDER = ["home", "week", "directory", "services", "moving", "value", "advertise", "newsletter"]
 
 def nav_html(page, root):
     return "".join(f'<a href="{root}{href}"' + (' aria-current="page"' if key == page else "") + f">{label}</a>"
