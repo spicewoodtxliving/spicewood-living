@@ -26,6 +26,7 @@ def nice(d): return f"{d:%B} {d.day}, {d.year}"
 
 NAV = [("index.html", "home", "Home"), ("this-week.html", "week", "This Week"),
        ("local-businesses.html", "directory", "Local Businesses"),
+       ("home-services.html", "services", "Home Services"),
        ("moving-to-spicewood.html", "moving", "Moving Here"),
        ("advertise.html", "advertise", "Advertise"), ("newsletter.html", "newsletter", "Newsletter")]
 
@@ -36,6 +37,8 @@ PAGES = {
           "Live music, events, new openings and local news in Spicewood, Texas, updated every Monday."),
  "directory": ("local-businesses.html", "local-businesses.html", "Spicewood, TX Local Businesses: Wineries, Breweries & More | Spicewood Living",
           "Spicewood, Texas wineries, breweries, distilleries, restaurants, shops and parks along Hwy 71 and Lake Travis."),
+ "services": ("home-services.html", "home-services.html", "Spicewood, TX Home Services: Septic, Wells, Utilities & Local Pros | Spicewood Living",
+          "How utilities work in Spicewood, Texas (electric, water, septic, internet, propane, trash) and local pros for septic, HVAC, plumbing, landscaping and more."),
  "moving": ("moving-to-spicewood.html", "moving-to-spicewood.html", "Moving to Spicewood, TX: Schools, Neighborhoods & What to Know | Spicewood Living",
           "Thinking about moving to Spicewood, Texas? School districts, neighborhoods, septic and water, and a first-month checklist."),
  "advertise": ("advertise.html", "advertise.html", "Advertise Your Spicewood Business | Spicewood Living",
@@ -43,7 +46,7 @@ PAGES = {
  "newsletter": ("newsletter.html", "newsletter.html", "This Week in Spicewood Newsletter | Spicewood Living",
           "Get This Week in Spicewood every Monday: new openings, live music, and local news. Short, local, and free."),
 }
-ORDER = ["home", "week", "directory", "moving", "advertise", "newsletter"]
+ORDER = ["home", "week", "directory", "services", "moving", "advertise", "newsletter"]
 
 def nav_html(page, root):
     return "".join(f'<a href="{root}{href}"' + (' aria-current="page"' if key == page else "") + f">{label}</a>"
@@ -131,6 +134,14 @@ def build(preview=False):
             body = body.replace("{{chips}}", "".join(f'<button type="button" class="chip" aria-pressed="{str(c == "All").lower()}" data-c="{E(c)}">{E(c)}</button>' for c in cats))
             body = body.replace("{{listings}}", "\n      " + "\n      ".join(
                 f'<div class="biz" data-cat="{E(b["category"])}"><span class="cat">{E(b["category"])}</span><h4>{E(b["name"])}</h4><p>{E(b["description"])}</p><span class="addr">{E(b["address"])}</span></div>' for b in biz) + "\n    ")
+        if key == "services":
+            svc = json.load(open(os.path.join(ROOT, "data/home-services.json"), encoding="utf-8"))
+            cards = []
+            for c in svc:
+                pros = "".join(f'<li><strong>{E(p["name"])}</strong>' + (f' · {E(p["phone"])}' if p.get("phone") else "") + (f' · <a href="{E(p["url"])}" target="_blank" rel="noopener">Website</a>' if p.get("url") else "") + "</li>" for p in c["providers"])
+                inner = f'<ul class="pro-list">{pros}</ul>' if pros else f'<p class="addr">Listings coming soon. <a href="{{{{root}}}}advertise.html">Get listed in this category →</a></p>'
+                cards.append(f'<div class="biz"><span class="cat">{E(c["category"])}</span><p>{E(c["tip"])}</p>{inner}</div>')
+            body = body.replace("{{pros}}", "\n      " + "\n      ".join(cards) + "\n    ")
         page(key, out, body, title, desc)
 
     for d, w in weeks:

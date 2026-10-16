@@ -208,3 +208,11 @@ html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!i
 .past-weeks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 .past-weeks a{font-weight:600}
 .permalink{font-size:.85rem;margin-top:8px}
+.util-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.util{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:4px;align-content:start;min-width:0}
+.util .cat{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--lake)}
+.util h3{font-size:1.2rem}
+.util p{font-size:.9rem;color:var(--muted)}
+.pro-list{margin:6px 0 0;padding-left:18px;font-size:.9rem}
+@media (max-width:860px){.util-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.util-grid{grid-template-columns:1fr}}
