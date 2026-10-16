@@ -1,0 +1,111 @@
+{
+  "week_of": "2026-10-16",
+  "teaser": "Canyon Ranch Austin is open, a new restaurant building is planned on Hwy 71, and live music every weekend.",
+  "lead": {
+    "tag": "Now open",
+    "headline": "Canyon Ranch Austin opened its doors on October 15",
+    "paragraphs": [
+      "The 600-acre wellness resort at 600 Moonlight Bend is officially welcoming guests. It has 141 rooms, a 40,000-square-foot spa the company calls the largest in Texas, and 1.5 miles of Lake Travis shoreline on the former Flying X ranch. Rates start at $1,325 a night. A 134-home residential community surrounds the resort."
+    ],
+    "sources": [
+      {
+        "name": "Texas Monthly",
+        "url": "https://www.texasmonthly.com/travel/canyon-ranch-austin-opening/"
+      },
+      {
+        "name": "CultureMap",
+        "url": "https://dallas.culturemap.com/news/travel/canyon-ranch-austin-hill-country/"
+      }
+    ]
+  },
+  "news": [
+    {
+      "label": "Development · Oct 10",
+      "headline": "New restaurant and retail building planned at 5600 Hwy 71",
+      "body": "A state filing shows SpiceQ plans a 10,008-square-foot restaurant and retail building on the Hwy 71 corridor. No tenants announced yet.",
+      "sources": [
+        {
+          "name": "Hoodline",
+          "url": "https://hoodline.com/2026/10/cardiologist-backed-spiceq-plots-1-8m-restaurant-and-retail-project-in-spicewood/"
+        }
+      ]
+    },
+    {
+      "label": "Community",
+      "headline": "The new Spicewood Community Library is under construction",
+      "body": "Work began in January on a 6,000-square-foot library at 1011 Spur 191, built behind the current building so it stays open. State records list completion around January 2027. The Friends group is still fundraising.",
+      "sources": [
+        {
+          "name": "TDLR",
+          "url": "https://www.tdlr.texas.gov/TABS/Search/Print/TABS2026009318"
+        },
+        {
+          "name": "DailyTrib",
+          "url": "https://www.dailytrib.com/?p=114691"
+        }
+      ]
+    },
+    {
+      "label": "Drinks",
+      "headline": "Bella Loma Distillery's tasting room is pouring agave spirits",
+      "body": "The family-owned distillery serves house-made blanco and reposado in margaritas and Mexican martinis, with añejo, mezcal and whiskey planned.",
+      "sources": [
+        {
+          "name": "Hoodline",
+          "url": "https://hoodline.com/2026/04/spicewood-agave-upstart-crashes-hill-country-drinks-circuit/"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-17",
+      "title": "Chris Beall live at Iron Wolf",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "The Square Grooves at Poodies",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "8 PM",
+      "url": "https://allevents.in/spicewood/texas"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "The Caterwaulers live at Iron Wolf",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Free Halloween show: Brandon Alan",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Paul Overstreet & Friends",
+      "venue": "Spicewood Arts at Spicewood Vineyards Event Center",
+      "time": "Doors 6:30, show 7:30 PM",
+      "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Texas Mahjong Showdown (Nov 12–15)",
+      "venue": "Canyon Ranch Austin",
+      "time": "",
+      "url": "https://www.texasmonthly.com/events/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Veterans Day Celebration",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    }
+  ]
+}

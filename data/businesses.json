@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Iron Wolf Ranch & Distillery",
+    "category": "Wine, Beer & Spirits",
+    "address": "101 County Road 409",
+    "description": "Ranch distillery with weekend live music."
+  },
+  {
+    "name": "Spicewood Vineyards",
+    "category": "Wine, Beer & Spirits",
+    "address": "County Road 409",
+    "description": "Long-running Texas winery; hosts Spicewood Arts concerts."
+  },
+  {
+    "name": "Frontyard Brewing",
+    "category": "Wine, Beer & Spirits",
+    "address": "4514 Bob Wire Rd",
+    "description": "Family-friendly taproom with food trucks and pickleball."
+  },
+  {
+    "name": "5 Soul Wine Co.",
+    "category": "Wine, Beer & Spirits",
+    "address": "4514 Bob Wire Rd",
+    "description": "Winery sharing grounds with Frontyard; playground for kids."
+  },
+  {
+    "name": "Highway 71 Brewing Co.",
+    "category": "Wine, Beer & Spirits",
+    "address": "22111 Hwy 71, Bldg 601",
+    "description": "Brewery with indoor pickleball and golf simulators."
+  },
+  {
+    "name": "Bella Loma Distillery",
+    "category": "Wine, Beer & Spirits",
+    "address": "Spicewood",
+    "description": "Agave spirits tasting room, family owned."
+  },
+  {
+    "name": "Stone House Vineyard",
+    "category": "Wine, Beer & Spirits",
+    "address": "24350 Haynie Flat Rd",
+    "description": "Small vineyard tasting room."
+  },
+  {
+    "name": "El Gaucho Winery",
+    "category": "Wine, Beer & Spirits",
+    "address": "21301 Kathy Ln",
+    "description": "Argentine-style winery."
+  },
+  {
+    "name": "Poodies Hilltop Roadhouse",
+    "category": "Eat & Drink",
+    "address": "22308 Hwy 71",
+    "description": "Roadhouse with live music most nights."
+  },
+  {
+    "name": "Bottle & Cork",
+    "category": "Shops",
+    "address": "18225 Hwy 71",
+    "description": "Wine, spirits and charcuterie near Bee Creek Rd."
+  },
+  {
+    "name": "Hoekstra Bros Fine Wine",
+    "category": "Shops",
+    "address": "9412 E Hwy 71, Unit A",
+    "description": "Wine, craft beer, local honey and gifts."
+  },
+  {
+    "name": "Krause Springs",
+    "category": "Outdoors",
+    "address": "Spicewood",
+    "description": "Spring-fed swimming hole and campground."
+  },
+  {
+    "name": "Pace Bend Park",
+    "category": "Outdoors",
+    "address": "Lake Travis",
+    "description": "Travis County park with lake access, camping and cliffs."
+  },
+  {
+    "name": "Reimers Ranch Park",
+    "category": "Outdoors",
+    "address": "Pedernales River",
+    "description": "Climbing, mountain biking and river access."
+  },
+  {
+    "name": "Hamilton Pool Preserve",
+    "category": "Outdoors",
+    "address": "Hamilton Pool Rd",
+    "description": "Grotto and waterfall. Reservations required."
+  },
+  {
+    "name": "Canyon Ranch Austin",
+    "category": "Stay & Wellness",
+    "address": "600 Moonlight Bend",
+    "description": "Wellness resort and spa, opened Oct 2026."
+  },
+  {
+    "name": "Spicewood Community Library",
+    "category": "Community",
+    "address": "1011 Spur 191",
+    "description": "Free library; new building under construction."
+  }
+]

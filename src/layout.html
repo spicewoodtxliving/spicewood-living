@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spicewood Living">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="https://spicewoodtxliving.com/hero-sunset.jpg">
+<link rel="icon" href="{{root}}logo-color.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@500;700;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="{{root}}assets/site.css">
+{{jsonld}}
+</head>
+<body data-page="{{page}}">
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="{{root}}index.html" aria-label="Spicewood Living home"><img src="{{root}}logo-white.png" alt="Spicewood, Texas" width="168" height="45"></a>
+    <nav class="links" aria-label="Sections">
+      {{nav}}
+    </nav>
+  </div>
+</header>
+
+<main>
+{{body}}
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="{{root}}logo-white.png" alt="Spicewood, Texas" width="210" height="56" style="height:auto">
+    <strong style="font-family:var(--display);font-size:1.2rem">Spicewood Living</strong>
+    <p>A community guide curated by Madison Dyer, eXp Realty · Spicewood / Lake Travis · (830) 613-7999 · info@spicewoodtxliving.com · Instagram @spicewoodliving</p>
+    <p><a href="https://www.trec.texas.gov/forms/consumer-protection-notice" target="_blank" rel="noopener">TREC Consumer Protection Notice</a> · Information About Brokerage Services (coming soon)</p>
+    <p style="opacity:.75">Event times and details come from each organizer. Confirm before you go.</p>
+  </div>
+</footer>
+
+<script src="{{root}}assets/site.js"></script>
+</body>
+</html>

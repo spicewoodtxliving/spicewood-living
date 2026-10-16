@@ -1,0 +1,27 @@
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">This Week in Spicewood · {{week_label}}</span>
+      <h1>{{week_heading}}</h1>
+      <p>Updated every Monday. Something we missed? Email <a href="mailto:info@spicewoodtxliving.com">info@spicewoodtxliving.com</a>.</p>
+    </div>
+
+    {{lead}}
+
+    <div class="week-grid">
+      <div>
+        <h2 style="font-size:1.35rem;margin-bottom:6px">Coming up</h2>
+        <ul class="events" id="events">{{events}}</ul>
+        <p class="empty" id="noEvents" hidden>New events posted Monday.</p>
+      </div>
+      <div class="news">
+        <h2 style="font-size:1.35rem">Local news</h2>
+        {{news}}
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin:48px 0 12px">
+      <span class="label">Archive</span>
+      <h2 style="font-size:1.6rem">Past weeks in Spicewood</h2>
+    </div>
+    {{past_weeks}}
+  </div>
