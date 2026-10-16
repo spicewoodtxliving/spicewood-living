@@ -216,3 +216,4 @@ html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!i
 .pro-list{margin:6px 0 0;padding-left:18px;font-size:.9rem}
 @media (max-width:860px){.util-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:540px){.util-grid{grid-template-columns:1fr}}
+.note-line{background:var(--sun-soft);border:1px solid var(--sun);border-radius:10px;padding:12px 16px;margin:0 0 28px;font-size:.95rem}
