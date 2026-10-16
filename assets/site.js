@@ -58,20 +58,58 @@ function mcSubscribe(fields){
     document.body.appendChild(sc);
   });
 }
+function wireNewsletter(form,ids,onDone){
+  const g=id=>form.querySelector("#"+id);
+  form.addEventListener("submit",async e=>{e.preventDefault();
+    const email=g(ids.email).value.trim(),first=g(ids.first).value.trim(),last=g(ids.last).value.trim(),st=g(ids.status),btn=form.querySelector("button[type=submit]");
+    if(!first||!last){show(st,"alt","Add your first and last name.");return}
+    if(!/^\S+@\S+\.\S+$/.test(email)){show(st,"alt","Enter a valid email address so we can send the Monday email.");return}
+    btn.disabled=true;
+    try{
+      const r=await mcSubscribe({EMAIL:email,FNAME:first,LNAME:last});
+      if(r.result==="success"){show(st,"ok","You're subscribed. Look for This Week in Spicewood on Monday.");form.reset();onDone&&onDone()}
+      else if(/already subscribed/i.test(r.msg||"")){show(st,"ok","You're already on the list. See you Monday.");onDone&&onDone()}
+      else{show(st,"alt","That didn't go through. Check your email address and try again.")}
+    }catch{show(st,"alt","That didn't go through. Please try again, or text Madison at (830) 613-7999.")}
+    finally{btn.disabled=false}
+  });
+}
 const nl=$("#nlForm");
-if(nl)nl.addEventListener("submit",async e=>{e.preventDefault();
-  const email=$("#n_email").value.trim(),first=$("#n_first").value.trim(),last=$("#n_last").value.trim(),st=$("#nlStatus"),btn=nl.querySelector("button");
-  if(!first||!last){show(st,"alt","Add your first and last name.");return}
-  if(!/^\S+@\S+\.\S+$/.test(email)){show(st,"alt","Enter a valid email address so we can send the Monday email.");return}
-  btn.disabled=true;
-  try{
-    const r=await mcSubscribe({EMAIL:email,FNAME:first,LNAME:last});
-    if(r.result==="success"){show(st,"ok","You're subscribed. Look for This Week in Spicewood on Monday.");nl.reset()}
-    else if(/already subscribed/i.test(r.msg||"")){show(st,"ok","You're already on the list. See you Monday.")}
-    else{show(st,"alt","That didn't go through. Check your email address and try again.")}
-  }catch{show(st,"alt","That didn't go through. Please try again, or text Madison at (830) 613-7999.")}
-  finally{btn.disabled=false}
-});
+if(nl)wireNewsletter(nl,{first:"n_first",last:"n_last",email:"n_email",status:"nlStatus"},()=>remember("nl_subscribed","1"));
+
+/* newsletter popup: once per visitor, a few seconds after the page opens */
+function recall(k){try{return localStorage.getItem(k)}catch{return null}}
+function remember(k,v){try{localStorage.setItem(k,v)}catch{}}
+const POP_DELAY=4000,POP_SNOOZE_DAYS=14;
+(function(){
+  if(document.body.dataset.page==="newsletter"||recall("nl_subscribed"))return;
+  const snoozed=+recall("nl_popup_closed")||0;
+  if(Date.now()-snoozed<POP_SNOOZE_DAYS*864e5)return;
+  const wrap=document.createElement("div");wrap.className="nl-pop";wrap.hidden=true;
+  wrap.innerHTML=`<div class="nl-pop-card" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="popTitle">
+    <button type="button" class="nl-pop-x" aria-label="Close">&times;</button>
+    <span class="label">The weekly email</span>
+    <h2 id="popTitle">This Week in Spicewood, every Monday</h2>
+    <p>New openings, the weekend's live music, and what's happening around town. Short, local, and free.</p>
+    <form id="popForm" novalidate>
+      <div class="row2">
+        <label class="f">First name<input id="p_first" autocomplete="given-name" required></label>
+        <label class="f">Last name<input id="p_last" autocomplete="family-name" required></label>
+      </div>
+      <label class="f">Email<input id="p_email" type="email" autocomplete="email" required></label>
+      <button class="go" type="submit">Subscribe</button>
+      <div id="popStatus" class="status" hidden></div>
+    </form>
+    <button type="button" class="nl-pop-no">No thanks</button>
+  </div>`;
+  document.body.appendChild(wrap);
+  let lastFocus=null;
+  function close(){wrap.hidden=true;document.removeEventListener("keydown",onKey);remember("nl_popup_closed",String(Date.now()));lastFocus&&lastFocus.focus&&lastFocus.focus()}
+  function onKey(e){if(e.key==="Escape")close()}
+  wrap.addEventListener("click",e=>{if(e.target===wrap||e.target.closest(".nl-pop-x,.nl-pop-no"))close()});
+  wireNewsletter(wrap.querySelector("#popForm"),{first:"p_first",last:"p_last",email:"p_email",status:"popStatus"},()=>{remember("nl_subscribed","1");setTimeout(close,2500)});
+  setTimeout(()=>{lastFocus=document.activeElement;wrap.hidden=false;document.addEventListener("keydown",onKey);wrap.querySelector(".nl-pop-card").focus({preventScroll:true})},POP_DELAY);
+})();
 
 const biz=$("#bizForm");
 if(biz)biz.addEventListener("submit",async e=>{e.preventDefault();
