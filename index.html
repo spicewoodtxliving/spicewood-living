@@ -188,6 +188,32 @@ footer a{color:#DDA15E}
   nav.links{width:100%}
 }
 @media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
+/* phone layout */
+@media (max-width:640px){
+  header.top .wrap{padding-block:8px;gap:6px}
+  nav.links{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  nav.links::-webkit-scrollbar{display:none}
+  nav.links a{flex:0 0 auto;white-space:nowrap;padding:8px 12px}
+  .hero .wrap{padding-block:36px 48px;gap:16px}
+  .hero p.lede{font-size:1.05rem}
+  .mileposts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .mile:last-child{grid-column:1 / -1}
+  .credit{bottom:6px;font-size:.6rem}
+  section{padding-block:40px}
+  .sec-head{margin-bottom:20px}
+  .lead-story{padding:18px}
+  .events li{grid-template-columns:56px 1fr;gap:12px}
+  .date .dy{font-size:1.7rem}
+  .dir-bar input{flex-basis:100%}
+  .chips{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;white-space:nowrap;padding:8px 14px}
+  .form-card{padding:16px}
+  button.go{justify-self:stretch;width:100%;padding:14px}
+  .ask{padding:20px}
+  .phone a.shop{display:block;width:100%;text-align:center}
+  .tile{padding:18px}
+}
 </style>
 <style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
@@ -208,12 +234,13 @@ footer a{color:#DDA15E}
   <div class="wrap">
     <span class="label" style="color:var(--on-dark);opacity:.8">Spicewood, Texas · 78669 · <!-- WEEKLY-DATE:START -->Week of October 16, 2026<!-- WEEKLY-DATE:END --></span>
     <h1>Everything happening in <em>Spicewood</em>, in one place.</h1>
-    <p class="lede">Local news, live music, new openings, the businesses worth knowing, and a straight-talking guide for anyone thinking about moving here.</p>
+    <p class="lede">Local news, live music, Lake Travis days, new openings, the businesses worth knowing, and a straight-talking guide for anyone thinking about moving here.</p>
     <div class="mileposts" aria-label="Spicewood at a glance">
       <div class="mile"><strong>35 mi</strong>to downtown Austin</div>
       <div class="mile"><strong>9 mi</strong>to Marble Falls</div>
       <div class="mile"><strong>3 counties</strong>Burnet · Travis · Blanco</div>
-      <div class="mile"><strong>Hwy 71</strong>the main street</div>
+      <div class="mile"><strong>Hwy 71</strong>the heart of Spicewood</div>
+      <div class="mile"><strong>Lake Travis</strong>our backyard lake</div>
     </div>
   </div>
   <span class="credit">Hill Country sunset · Photo: Madison Dyer</span>
@@ -510,6 +537,8 @@ function route(){
   if(!PAGES.some(([p])=>p===id))id="home";
   document.querySelectorAll(".page").forEach(el=>el.hidden=el.dataset.page!==id);
   document.querySelectorAll("nav.links a").forEach(a=>{if(a.getAttribute("href")==="#"+id)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  const nav=document.querySelector("nav.links"),cur=nav.querySelector('[aria-current="page"]');
+  if(cur&&nav.scrollWidth>nav.clientWidth)nav.scrollLeft=(cur.offsetLeft-nav.offsetLeft)-(nav.clientWidth-cur.offsetWidth)/2;
   window.scrollTo(0,0);
 }
 window.addEventListener("hashchange",route);
