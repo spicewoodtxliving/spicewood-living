@@ -390,8 +390,12 @@ footer a{color:#DDA15E}
           <label class="f">Category<select id="b_cat"><option>Eat & Drink</option><option>Wine, Beer & Spirits</option><option>Home & Services</option><option>Shops</option><option>Outdoors</option><option>Stay & Wellness</option><option>Community</option></select></label>
         </div>
         <div class="row2">
-          <label class="f">Your name<input id="b_contact" required></label>
-          <label class="f">Phone or email<input id="b_reach" required></label>
+          <label class="f">First name<input id="b_first" autocomplete="given-name" required></label>
+          <label class="f">Last name<input id="b_last" autocomplete="family-name" required></label>
+        </div>
+        <div class="row2">
+          <label class="f">Email<input id="b_email" type="email" autocomplete="email" required></label>
+          <label class="f">Phone (optional)<input id="b_phone" type="tel" autocomplete="tel"></label>
         </div>
         <div class="row2">
           <label class="f">Listing type<select id="b_tier"><option>Basic (free)</option><option>Featured</option><option>Spotlight</option></select></label>
@@ -415,9 +419,10 @@ footer a{color:#DDA15E}
     <div class="form-card">
       <form id="nlForm" novalidate>
         <div class="row2">
-          <label class="f">First name<input id="n_name" autocomplete="given-name"></label>
-          <label class="f">Email<input id="n_email" type="email" autocomplete="email" required></label>
+          <label class="f">First name<input id="n_first" autocomplete="given-name" required></label>
+          <label class="f">Last name<input id="n_last" autocomplete="family-name" required></label>
         </div>
+        <label class="f">Email<input id="n_email" type="email" autocomplete="email" required></label>
         <button class="go" type="submit">Subscribe</button>
         <div id="nlStatus" class="status" hidden></div>
       </form>
@@ -538,11 +543,12 @@ function mcSubscribe(fields){
   });
 }
 $("#nlForm").addEventListener("submit",async e=>{e.preventDefault();
-  const email=$("#n_email").value.trim(),st=$("#nlStatus"),btn=e.target.querySelector("button");
+  const email=$("#n_email").value.trim(),first=$("#n_first").value.trim(),last=$("#n_last").value.trim(),st=$("#nlStatus"),btn=e.target.querySelector("button");
+  if(!first||!last){show(st,"alt","Add your first and last name.");return}
   if(!/^\S+@\S+\.\S+$/.test(email)){show(st,"alt","Enter a valid email address so we can send the Monday email.");return}
   btn.disabled=true;
   try{
-    const r=await mcSubscribe({EMAIL:email,FNAME:$("#n_name").value.trim()});
+    const r=await mcSubscribe({EMAIL:email,FNAME:first,LNAME:last});
     if(r.result==="success"){show(st,"ok","You're subscribed. Look for This Week in Spicewood on Monday.");e.target.reset()}
     else if(/already subscribed/i.test(r.msg||"")){show(st,"ok","You're already on the list. See you Monday.")}
     else{show(st,"alt","That didn't go through. Check your email address and try again.")}
@@ -550,9 +556,10 @@ $("#nlForm").addEventListener("submit",async e=>{e.preventDefault();
   finally{btn.disabled=false}
 });
 $("#bizForm").addEventListener("submit",async e=>{e.preventDefault();
-  const st=$("#bizStatus"),name=$("#b_name").value.trim(),reach=$("#b_reach").value.trim(),contact=$("#b_contact").value.trim();
-  if(!name||!reach||!contact){show(st,"alt","Add your business name, your name, and a phone or email so we can reach you.");return}
-  if(await send("Listing request: "+name,{business:name,category:$("#b_cat").value,contact,reach,tier:$("#b_tier").value,address:$("#b_addr").value.trim(),description:$("#b_desc").value.trim()},st)){
+  const st=$("#bizStatus"),name=$("#b_name").value.trim(),first=$("#b_first").value.trim(),last=$("#b_last").value.trim(),email=$("#b_email").value.trim();
+  if(!name||!first||!last){show(st,"alt","Add your business name and your first and last name.");return}
+  if(!/^\S+@\S+\.\S+$/.test(email)){show(st,"alt","Enter a valid email address so Madison can reach you.");return}
+  if(await send("Listing request: "+name,{business:name,category:$("#b_cat").value,first_name:first,last_name:last,email,phone:$("#b_phone").value.trim(),tier:$("#b_tier").value,address:$("#b_addr").value.trim(),description:$("#b_desc").value.trim()},st)){
     show(st,"ok","Request received. Madison will follow up within two business days.");e.target.reset()}
 });
 </script>
