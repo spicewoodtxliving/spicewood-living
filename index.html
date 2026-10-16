@@ -197,7 +197,7 @@ footer a{color:#DDA15E}
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Spicewood Living home"><img src="logo-white.png" alt="Spicewood, Texas" width="168" height="45"></a>
     <nav class="links" aria-label="Sections">
-      <a href="#home">Home</a><a href="#week">This Week</a><a href="#directory">Directory</a><a href="#moving">Moving Here</a><a href="#advertise">Advertise</a><a href="#newsletter">Newsletter</a>
+      <a href="#home">Home</a><a href="#week">This Week</a><a href="#directory">Local Businesses</a><a href="#moving">Moving Here</a><a href="#advertise">Advertise</a><a href="#newsletter">Newsletter</a>
     </nav>
   </div>
 </header>
@@ -222,7 +222,7 @@ footer a{color:#DDA15E}
   <div class="wrap">
     <div class="tiles">
       <a class="tile" href="#week"><span class="label">Updated Mondays</span><h3>This Week in Spicewood</h3><!-- WEEKLY-TEASER:START --><p>Canyon Ranch Austin is open, a new restaurant building is planned on Hwy 71, and live music every weekend.</p><!-- WEEKLY-TEASER:END --><span class="go-link">See this week →</span></a>
-      <a class="tile" href="#directory"><span class="label">17 local spots</span><h3>Local Directory</h3><p>Wineries, breweries, roadhouses, parks and the places locals actually use.</p><span class="go-link">Browse the directory →</span></a>
+      <a class="tile" href="#directory"><span class="label">17 local spots</span><h3>Local Businesses</h3><p>Wineries, breweries, roadhouses, parks and the places locals actually use.</p><span class="go-link">Browse local businesses →</span></a>
       <a class="tile" href="#moving"><span class="label">For newcomers</span><h3>Moving to Spicewood</h3><p>School districts, septic and water, neighborhoods, and a first-month checklist.</p><span class="go-link">Read the guide →</span></a>
       <a class="tile" href="#advertise"><span class="label">Local businesses</span><h3>Advertise with us</h3><p>Free basic listings for every Spicewood business, plus Featured spots.</p><span class="go-link">Get listed →</span></a>
     </div>
@@ -287,18 +287,18 @@ footer a{color:#DDA15E}
 <section class="page" data-page="directory">
   <div class="wrap">
     <div class="sec-head">
-      <span class="label">Local Directory</span>
+      <span class="label">Local Businesses</span>
       <h2>Spicewood businesses and places</h2>
       <p>Wineries, breweries, food, parks and the places locals actually use.</p>
     </div>
 
     <div class="featured-row" aria-label="Featured listings">
-      <div class="slot"><span class="label">Featured spot · open</span><h3>Your business here</h3><p>Top-of-directory placement with photo, hours and a link. <a href="#advertise">See Featured listings</a></p></div>
+      <div class="slot"><span class="label">Featured spot · open</span><h3>Your business here</h3><p>Top placement on Local Businesses with photo, hours and a link. <a href="#advertise">See Featured listings</a></p></div>
       <div class="slot"><span class="label">Featured spot · open</span><h3>Your business here</h3><p>Two featured spots per month. Founding businesses get first pick. <a href="#advertise">Apply</a></p></div>
     </div>
 
     <div class="dir-bar">
-      <label for="q" class="label" style="position:absolute;left:-9999px">Search the directory</label>
+      <label for="q" class="label" style="position:absolute;left:-9999px">Search local businesses</label>
       <input id="q" type="search" placeholder="Search by name or what you need">
       <div class="chips" id="chips" role="group" aria-label="Category"></div>
     </div>
@@ -378,8 +378,8 @@ footer a{color:#DDA15E}
       <p>Every Spicewood business gets a free basic listing. Want locals and newcomers to see you first? Go Featured.</p>
     </div>
     <div class="tiers">
-      <div class="tier"><span class="label">Basic</span><div class="price">Free</div><ul><li>Name, category, address, one-line description</li><li>Searchable in the directory</li></ul></div>
-      <div class="tier hot"><span class="label">Featured</span><div class="price">$49<small> / month</small></div><ul><li>Top-of-directory spot with photo and link</li><li>Badge on your basic listing</li><li>One mention in the weekly newsletter each month</li></ul></div>
+      <div class="tier"><span class="label">Basic</span><div class="price">Free</div><ul><li>Name, category, address, one-line description</li><li>Searchable on the Local Businesses page</li></ul></div>
+      <div class="tier hot"><span class="label">Featured</span><div class="price">$49<small> / month</small></div><ul><li>Top spot on the Local Businesses page with photo and link</li><li>Badge on your basic listing</li><li>One mention in the weekly newsletter each month</li></ul></div>
       <div class="tier"><span class="label">Spotlight</span><div class="price">$149<small> / month</small></div><ul><li>Everything in Featured</li><li>A dedicated business spotlight post on @spicewoodliving</li><li>Event promotion in This Week</li></ul></div>
     </div>
     <div class="form-card">
@@ -496,7 +496,7 @@ $("#q").addEventListener("input",renderBiz);
 renderEvents();renderChips();renderBiz();
 
 /* pages: each section is its own page, switched by the menu (#week, #directory, …) */
-const PAGES=[["home","Home"],["week","This Week"],["directory","Directory"],["moving","Moving Here"],["advertise","Advertise"],["newsletter","Newsletter"]];
+const PAGES=[["home","Home"],["week","This Week"],["directory","Local Businesses"],["moving","Moving Here"],["advertise","Advertise"],["newsletter","Newsletter"]];
 PAGES.forEach(([id],i)=>{
   if(id==="home")return;
   const wrap=document.querySelector(`[data-page="${id}"] > .wrap`);
