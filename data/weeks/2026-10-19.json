@@ -1,0 +1,109 @@
+{
+  "week_of": "2026-10-19",
+  "teaser": "A 15-court pickleball and padel club broke ground off Reimers Peacock Road, plus Halloween weekend plans and Spicewood Live's November return.",
+  "lead": {
+    "tag": "Breaking ground",
+    "headline": "Pickleball Grove breaks ground in Spicewood, with outdoor courts aiming for December",
+    "paragraphs": [
+      "Work started October 12 on Pickleball Grove at 5411 Reimers Peacock Road. The first phase is four outdoor pickleball courts, which the team hopes to open in mid to late December.",
+      "An indoor building is planned next, with eight pickleball courts (four built for championship play), three padel courts, locker rooms with showers, and a mezzanine lounge with ping-pong and a private meeting room. Every court is set to have PlaySight video cameras. The indoor side is targeted for late February 2027, and a state filing puts the project at about $6.9 million.",
+      "Expect open play, clinics and private lessons once it opens."
+    ],
+    "sources": [
+      {
+        "name": "Hoodline",
+        "url": "https://hoodline.com/2026/10/spicewood-breaks-ground-on-15-court-pickleball-grove-eyes-december-opening/"
+      }
+    ]
+  },
+  "news": [
+    {
+      "label": "Halloween · Oct 31",
+      "headline": "Two ways to spend Halloween Saturday in Spicewood",
+      "body": "Iron Wolf Ranch hosts a free afternoon show with Brandon Alan from 2 to 5 PM. After dark, Poodie's throws a Halloween party and costume contest with Madam Radar at 10:30 PM ($20).",
+      "sources": [
+        {
+          "name": "Iron Wolf Ranch",
+          "url": "https://ironwolfranch.com/events/"
+        },
+        {
+          "name": "Poodie's Hilltop Roadhouse",
+          "url": "https://poodies.net/calendar/2026/10"
+        }
+      ]
+    },
+    {
+      "label": "Library · Oct 29",
+      "headline": "Pumpkin Parade and ghost stories at Lake Travis Library",
+      "body": "Kids can join a Pumpkin Parade at 10:30 AM on October 29, with the West branch on Hwy 71 in Spicewood taking part, followed by a Ghost Tales storyteller on October 30. A beginner watercolor class is also on the calendar at Library West on October 19.",
+      "sources": [
+        {
+          "name": "Lakeway Arts District News",
+          "url": "https://lakewayarts.substack.com/p/lakeway-arts-district-news-autumn"
+        }
+      ]
+    },
+    {
+      "label": "Music · Nov 6",
+      "headline": "Spicewood Live returns with Paul Overstreet & Friends",
+      "body": "Spicewood Arts brings the songwriter and friends to the Spicewood Vineyards Event Center on November 6, with doors at 6:30. The Matt Wilson Band follows on December 4.",
+      "sources": [
+        {
+          "name": "Spicewood Arts",
+          "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-19",
+      "title": "Songwriters Showcase: George Ensle hosts The Weary Ramblers",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "6:30 PM",
+      "url": "https://poodies.net/calendar/2026/10"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "The Caterwaulers live at Iron Wolf",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Pumpkin Parade",
+      "venue": "Lake Travis Community Library & Library West",
+      "time": "10:30 AM",
+      "url": "https://lakewayarts.substack.com/p/lakeway-arts-district-news-autumn"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Free Halloween show: Brandon Alan",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Halloween party & costume contest with Madam Radar",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "10:30 PM",
+      "url": "https://poodies.net/calendar/2026/10"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Spicewood Live: Paul Overstreet & Friends",
+      "venue": "Spicewood Vineyards Event Center",
+      "time": "Doors 6:30, show 7:30 PM",
+      "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Veterans Day Celebration with Taylor Hughes & Krystal King",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "",
+      "url": "https://ironwolfranch.com/events/"
+    }
+  ]
+}
