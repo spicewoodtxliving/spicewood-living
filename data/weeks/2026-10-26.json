@@ -1,0 +1,112 @@
+{
+  "week_of": "2026-10-26",
+  "teaser": "Spicewood Live opens its 27th season November 6, plus new batting cages on Hwy 71 and a free wildflower seeding day at Pace Bend Park.",
+  "lead": {
+    "tag": "Coming up",
+    "headline": "Spicewood Live kicks off its 27th season November 6 with Paul Overstreet & Friends",
+    "paragraphs": [
+      "Spicewood Arts opens its new concert season on Friday, November 6, at the Spicewood Vineyards Event Center. Doors open at 6:30 and songwriter Paul Overstreet takes the stage with friends at 7:30. General admission is $85, a limited number of reserved seats are $125, and a small pre-show artist reception can be added for $50.",
+      "The Matt Wilson Band follows on Friday, December 4 ($60). The rest of the six-show season moves around Spicewood in 2027: Will Taylor & Strings Attached at Lopez Hill Art & Tequila Gallery in February, The Peterson Brothers at Iron Wolf Ranch in March, Two Tons of Steel in April, and A Toast to Tony Campise in May.",
+      "A $300 season pass covers all six shows, with only 50 available."
+    ],
+    "sources": [
+      {
+        "name": "Spicewood Arts",
+        "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+      }
+    ]
+  },
+  "news": [
+    {
+      "label": "New business · Hwy 71",
+      "headline": "Infinite Hitting brings batting cages to Spicewood",
+      "body": "The baseball and softball training spot was set to open in early October at 22111 Hwy 71, offering cages, pitching machines, camera-tracked training, private lessons, camps and clinics.",
+      "sources": [
+        {
+          "name": "Community Impact",
+          "url": "https://communityimpact.com/lake-travis-westlake/business/check-out-14-business-updates-from-around-the-lake-travis-westlake-area/"
+        }
+      ]
+    },
+    {
+      "label": "Outdoors · Nov 14",
+      "headline": "Help seed wildflowers at Pace Bend Park",
+      "body": "The Travis County Parks Foundation is inviting volunteers to spread wildflower seed at Pace Bend Park on Saturday, November 14, as part of its Community Stewards series. It's free, and registration is through the event listing.",
+      "sources": [
+        {
+          "name": "Travis County Parks Foundation via NewsBreak",
+          "url": "https://www.newsbreak.com/event/6ad1fcc455a855d51cfc011e-community-stewards-wildflower-seeding-at-pace-bend-park"
+        }
+      ]
+    },
+    {
+      "label": "Wine · Nov 1",
+      "headline": "Fall sip and paint at 5 Soul Wine Co.",
+      "body": "The tasting room on Bob Wire Road hosts a two-hour painting session from 1 to 3 PM on Sunday, November 1. Tickets are $60 per person.",
+      "sources": [
+        {
+          "name": "NewsBreak",
+          "url": "https://www.newsbreak.com/event/6abf8eb855a855d51ce3f0ab-hello-fall-sip-paint-at-5-soul-wine-co-sunday-november-1st"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-31",
+      "title": "Free Halloween show: Brandon Alan",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Halloween party & costume contest with Madam Radar",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "10:30 PM",
+      "url": "https://poodies.net/calendar/2026/10"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Hello, Fall! Sip & Paint",
+      "venue": "5 Soul Wine Co. Tasting Room",
+      "time": "1–3 PM",
+      "url": "https://www.newsbreak.com/event/6abf8eb855a855d51ce3f0ab-hello-fall-sip-paint-at-5-soul-wine-co-sunday-november-1st"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Spicewood Live: Paul Overstreet & Friends",
+      "venue": "Spicewood Vineyards Event Center",
+      "time": "Doors 6:30, show 7:30 PM",
+      "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Tumbling Dice live",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "2 PM",
+      "url": "https://www.newsbreak.com/event/6ac8ad2b55a855d51cda3aa9-tumbling-dice-returns-to-poodie-s-roadhouse-"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Chuck Shaw live",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "",
+      "url": "https://www.songkick.com/metro-areas/91651-us-spicewood"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Community Stewards: Wildflower Seeding (free volunteer event)",
+      "venue": "Pace Bend Park",
+      "time": "",
+      "url": "https://www.newsbreak.com/event/6ad1fcc455a855d51cfc011e-community-stewards-wildflower-seeding-at-pace-bend-park"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Spicewood Live: Matt Wilson Band",
+      "venue": "Spicewood Vineyards Event Center",
+      "time": "Doors 6, show 7 PM",
+      "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+    }
+  ]
+}
