@@ -1,0 +1,116 @@
+{
+  "week_of": "2026-11-02",
+  "teaser": "Canyon Ranch Austin is now welcoming guests on Lake Travis, a new restaurant-and-retail project is proposed on Hwy 71, and Spicewood Live opens its season Friday.",
+  "lead": {
+    "tag": "Now open",
+    "headline": "Canyon Ranch Austin opens its doors on Lake Travis in Spicewood",
+    "paragraphs": [
+      "After years of construction, the Canyon Ranch wellness resort on the former Flying X Ranch began welcoming guests in late October. The property spreads across more than 600 acres in Spicewood, with roughly a mile and a half of Lake Travis shoreline.",
+      "The resort has 141 guest rooms and a spa of about 40,000 square feet with 40 treatment rooms, which CultureMap reports is the largest in Texas. Dining includes Estella, a signature restaurant whose menu is guided by the chef behind San Francisco's three-Michelin-star Californios, plus a cafe, a lounge and an outdoor grove for special dinners.",
+      "Stays are all-inclusive and start at $1,325 per person per night. A collection of 134 single-family homes is also planned on the property."
+    ],
+    "sources": [
+      {
+        "name": "CultureMap",
+        "url": "https://sanantonio.culturemap.com/news/travel/canyon-ranch-austin-spa-opens/"
+      },
+      {
+        "name": "Texas Monthly",
+        "url": "https://www.texasmonthly.com/travel/canyon-ranch-austin-opening/"
+      }
+    ]
+  },
+  "news": [
+    {
+      "label": "Development · Hwy 71",
+      "headline": "SpiceQ mixed-use project proposed at 5600 Hwy 71",
+      "body": "A state filing shows a planned $1.8 million development with restaurant and retail space on Hwy 71 in Spicewood. Construction is penciled in to start in January, though the project is still tentative.",
+      "sources": [
+        {
+          "name": "Community Impact",
+          "url": "https://communityimpact.com/lake-travis-westlake/development/new-mixed-use-development-may-be-coming-to-spicewood/"
+        }
+      ]
+    },
+    {
+      "label": "Veterans Day · Nov 14",
+      "headline": "Freedom Fest honors veterans at Iron Wolf Ranch",
+      "body": "Iron Wolf Ranch & Distillery hosts a Veterans Day celebration on Saturday, November 14, with Nashville artists Taylor Hughes and Krystal King performing as part of the Lonestar Nights Texas Tour.",
+      "sources": [
+        {
+          "name": "Iron Wolf Ranch",
+          "url": "https://ironwolfranch.com/events/"
+        }
+      ]
+    },
+    {
+      "label": "Holidays · Dec 4",
+      "headline": "Marble Falls Light Up Parade returns December 4",
+      "body": "Just up the road, downtown Marble Falls brings back its Light Up Parade on Friday, December 4, held alongside the Walkway of Lights season at Lakeside Park.",
+      "sources": [
+        {
+          "name": "City of Marble Falls",
+          "url": "https://marblefallstx.gov/808/Light-Up-Parade"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-11-05",
+      "title": "Luke Daniel live",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "6–7:30 PM",
+      "url": "https://allevents.in/spicewood/luke-daniel-poodies-roadhouse/200030941673235"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Spicewood Live: Paul Overstreet & Friends",
+      "venue": "Spicewood Vineyards Event Center",
+      "time": "Doors 6:30, show 7:30 PM",
+      "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Tylor Brandon live",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Tumbling Dice live",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "",
+      "url": "https://www.newsbreak.com/event/6ac8ad2b55a855d51cda3aa9-tumbling-dice-returns-to-poodie-s-roadhouse-"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Freedom Fest Veterans Day celebration",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Community Stewards: Wildflower Seeding (free volunteer event)",
+      "venue": "Pace Bend Park",
+      "time": "",
+      "url": "https://www.newsbreak.com/event/6ad1fcc455a855d51cfc011e-community-stewards-wildflower-seeding-at-pace-bend-park"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Spicewood Live: Matt Wilson Band",
+      "venue": "Spicewood Vineyards Event Center",
+      "time": "Doors 6, show 7 PM",
+      "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Light Up Parade",
+      "venue": "Downtown Marble Falls",
+      "time": "",
+      "url": "https://marblefallstx.gov/808/Light-Up-Parade"
+    }
+  ]
+}
