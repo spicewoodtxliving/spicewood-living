@@ -1,0 +1,123 @@
+{
+  "week_of": "2026-11-09",
+  "teaser": "Christmas at the Barn is open on Hwy 71, Bee Cave's ice rink returns Friday, and the Marble Falls Walkway of Lights switches on November 20.",
+  "lead": {
+    "tag": "Holiday season",
+    "headline": "The holidays arrive along Hwy 71: Christmas at the Barn is open and the Walkway of Lights is close behind",
+    "paragraphs": [
+      "Green Acres on Hwy 71 East in Spicewood has opened its Christmas at the Barn holiday shop for the season, with Visit Marble Falls listing it from November 8 through December 23. You don't need to be staying at the property to stop by, and Santa is scheduled to visit for photos on Saturday, December 12, from noon to 4 PM. The shop is closed on Thanksgiving Day, and posted hours vary, so it's worth calling ahead before you go.",
+      "A short drive up the road, the Walkway of Lights at Lakeside Park in Marble Falls is set to open Friday, November 20, at 6 PM. This is the first season with the City of Marble Falls running the event after the Chamber of Commerce, which hosted it for more than three decades, handed over the reins this summer. The city says it has bought new light displays for this year, and crews began setting up in the park on November 2."
+    ],
+    "sources": [
+      {
+        "name": "Visit Marble Falls",
+        "url": "https://visitmarblefalls.org/christmas-season/"
+      },
+      {
+        "name": "Green Acres Spicewood",
+        "url": "https://www.greenacresspicewood.com/photoswithsanta"
+      },
+      {
+        "name": "City of Marble Falls",
+        "url": "https://marblefallstx.gov/m/newsflash/Home/Detail/765"
+      },
+      {
+        "name": "City of Marble Falls (leadership change)",
+        "url": "https://marblefallstx.gov/m/newsflash/Home/Detail/741"
+      }
+    ]
+  },
+  "news": [
+    {
+      "label": "Holidays · Nov 13",
+      "headline": "Bee Cave on Ice opens Friday for its 2026-27 season",
+      "body": "The outdoor rink behind Bee Cave City Hall at 4000 Galleria Parkway opens November 13 and runs through January 18. Admission is $16 plus tax for about 50 minutes on the ice with skates included, and select Tuesday Community Nights drop to $11.",
+      "sources": [
+        {
+          "name": "City of Bee Cave",
+          "url": "https://www.beecavetexas.gov/residents/events/bee_cave_on_ice/index.php"
+        }
+      ]
+    },
+    {
+      "label": "Live music · Nov 20",
+      "headline": "Dale Watson and His Lonestars play Poodie's",
+      "body": "Honky-tonk favorite Dale Watson brings his band to Poodie's Hilltop Roadhouse on Friday, November 20, with a late show listed for 10 PM. Ticket listings suggest seats are limited.",
+      "sources": [
+        {
+          "name": "American Arenas",
+          "url": "https://americanarenas.com/venue/poodies-hilltop-roadhouse/"
+        }
+      ]
+    },
+    {
+      "label": "Holidays · Dec 4",
+      "headline": "Lakeway lights its Trail of Lights at Lights On!",
+      "body": "Lakeway's free Lights On! celebration is Friday, December 4, from 6:30 to 9 PM in the City Hall parking lot, with the Trail of Lights switch-on, Santa and Mrs. Claus, live holiday music, s'mores and food vendors. Parking is at the Activity Center and Justice Center.",
+      "sources": [
+        {
+          "name": "City of Lakeway",
+          "url": "https://www.lakeway-tx.gov/1427/Lights-On"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-11-13",
+      "title": "Bee Cave on Ice opening day",
+      "venue": "Behind Bee Cave City Hall, 4000 Galleria Pkwy",
+      "time": "",
+      "url": "https://www.beecavetexas.gov/residents/events/bee_cave_on_ice/index.php"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Freedom Fest Veterans Day celebration",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Community Stewards: Wildflower Seeding (free volunteer event)",
+      "venue": "Pace Bend Park",
+      "time": "10:30 AM–12:30 PM",
+      "url": "https://www.newsbreak.com/event/6aef601ddc3f7994db3c340f-community-stewards-wildflower-seeding-at-pace-bend-park"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Walkway of Lights opening night",
+      "venue": "Lakeside Park, Marble Falls",
+      "time": "6 PM",
+      "url": "https://marblefallstx.gov/m/newsflash/Home/Detail/765"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Dale Watson and His Lonestars",
+      "venue": "Poodies Hilltop Roadhouse",
+      "time": "10 PM",
+      "url": "https://americanarenas.com/venue/poodies-hilltop-roadhouse/"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "Men of Madam Radar live",
+      "venue": "Iron Wolf Ranch & Distillery",
+      "time": "2–5 PM",
+      "url": "https://ironwolfranch.com/events/"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Spicewood Live: Matt Wilson Band",
+      "venue": "Spicewood Vineyards Event Center",
+      "time": "Doors 6, show 7 PM",
+      "url": "https://spicewoodarts.org/our-events/spicewood-live/"
+    },
+    {
+      "date": "2026-12-12",
+      "title": "Photos with Santa at Christmas at the Barn",
+      "venue": "Green Acres, 6038 Hwy 71 E, Spicewood",
+      "time": "12–4 PM",
+      "url": "https://www.greenacresspicewood.com/photoswithsanta"
+    }
+  ]
+}
