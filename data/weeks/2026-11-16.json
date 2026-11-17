@@ -1,0 +1,54 @@
+{
+  "week_of": "2026-11-16",
+  "teaser": "The Walkway of Lights opens Friday under new city management, Dale Watson plays Poodie's the same night, and a Spicewood cafe has new owners.",
+  "lead": {
+    "tag": "This Friday",
+    "headline": "Walkway of Lights opens Friday with new displays and a new host",
+    "paragraphs": [
+      "The Walkway of Lights at Lakeside Park in Marble Falls switches on for the season this Friday, November 20, at 6 PM. It's an easy drive up Hwy 71 from Spicewood and one of the Highland Lakes' best-loved holiday outings.",
+      "This is the first year the City of Marble Falls is running the show. The Chamber of Commerce, which managed the walkway for more than three decades, handed it over this summer and is advising during the transition. The city set aside roughly $450,000 for new sculptures from Mosca Design, which will add a dozen themed areas with large pieces and spots made for photos.",
+      "One change to know before you go: the ice rink is not coming back this year. City leaders said they wanted to put the focus on the lights, and a new LED feature will fill the space where the rink used to be."
+    ],
+    "sources": [
+      {"name": "City of Marble Falls", "url": "https://marblefallstx.gov/m/newsflash/Home/Detail/765"},
+      {"name": "DailyTrib (new displays, no ice rink)", "url": "https://www.dailytrib.com/2026/08/06/marble-falls-expanding-walkway-of-lights-displays-cutting-ice-rink/"},
+      {"name": "DailyTrib (funding approved)", "url": "https://www.dailytrib.com/2026/10/23/marble-falls-oks-funding-for-new-walkway-lights/"}
+    ]
+  },
+  "news": [
+    {
+      "label": "Business · Bee Creek Rd",
+      "headline": "Winston's Spicewood spot is now Neighbor's Cafe",
+      "body": "The cafe at 4900 Bee Creek Road changed hands in October and now operates as Neighbor's Cafe. Winston's owners are concentrating on their Bee Cave location instead, according to Community Impact's latest business roundup.",
+      "sources": [
+        {"name": "Community Impact", "url": "https://communityimpact.com/lake-travis-westlake/business/new-apartments-and-gyms-check-out-15-business-updates-from-the-lake-travis-westlake-area/"}
+      ]
+    },
+    {
+      "label": "Live music · Nov 20",
+      "headline": "Dale Watson and His Lonestars play Poodie's Friday",
+      "body": "Honky-tonk mainstay Dale Watson brings his band to Poodie's Hilltop Roadhouse on Friday, November 20, for a 10 PM show. Ticket listings start around $42.",
+      "sources": [
+        {"name": "American Arenas", "url": "https://americanarenas.com/venue/poodies-hilltop-roadhouse/"}
+      ]
+    },
+    {
+      "label": "Shop local · Dec 4–5",
+      "headline": "Spicewood Holiday Market set for early December",
+      "body": "Mic Drop Creative on Hwy 71 hosts a small, curated holiday market December 4 and 5, with local makers and growers set up inside and under the oaks out front. Expect handmade jewelry, candles, art, vintage finds and locally grown goods.",
+      "sources": [
+        {"name": "AllEvents", "url": "https://allevents.in/spicewood/spicewood-holiday-market/200031044069712"}
+      ]
+    }
+  ],
+  "events": [
+    {"date": "2026-11-16", "title": "George Ensle hosts Michael O'Connor", "venue": "Poodies Hilltop Roadhouse", "time": "6:30–8:30 PM", "url": "https://allevents.in/spicewood/george-ensle-hosts-michael-oconnor-at-poodies/200031023176350"},
+    {"date": "2026-11-20", "title": "Walkway of Lights opening night", "venue": "Lakeside Park, Marble Falls", "time": "6 PM", "url": "https://marblefallstx.gov/m/newsflash/Home/Detail/765"},
+    {"date": "2026-11-20", "title": "Dale Watson and His Lonestars", "venue": "Poodies Hilltop Roadhouse", "time": "10 PM", "url": "https://americanarenas.com/venue/poodies-hilltop-roadhouse/"},
+    {"date": "2026-11-21", "title": "Men of Madam Radar live", "venue": "Iron Wolf Ranch & Distillery", "time": "2–5 PM", "url": "https://ironwolfranch.com/events/"},
+    {"date": "2026-11-27", "title": "Garrett Jay Brown live", "venue": "Iron Wolf Ranch & Distillery", "time": "2–5 PM", "url": "https://ironwolfranch.com/events/"},
+    {"date": "2026-11-28", "title": "Spicewood Comedy Night", "venue": "Highway 71 Brewing, 22111 Hwy 71 W", "time": "8–9:30 PM", "url": "https://allevents.in/spicewood/spicewood-comedy-night-saturday-november-28th/200031029932904"},
+    {"date": "2026-12-04", "title": "Spicewood Holiday Market (also Dec 5)", "venue": "Mic Drop Creative, 22214 Hwy 71", "time": "9 AM–6 PM", "url": "https://allevents.in/spicewood/spicewood-holiday-market/200031044069712"},
+    {"date": "2026-12-19", "title": "Christmas Bazaar Sip N Shop", "venue": "Iron Wolf Ranch & Distillery", "time": "12–6 PM", "url": "https://allevents.in/spicewood/christmas-bazaar-sip-n-shop-tickets/200030998202043"}
+  ]
+}
